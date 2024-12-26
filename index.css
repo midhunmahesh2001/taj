@@ -1,0 +1,512 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+body {
+    margin: 0;
+    font-family: "Roboto Flex", serif;
+    background-color: #f9f9f9;
+}
+
+
+.hotel-details{
+    margin-top: 70px;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+    color: white;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    z-index: 1000;
+}
+
+.nav-logo{
+    align-items: center;
+    height: 20px;
+    align-items: start;
+}
+
+.nav-logo img{
+    width: 60px;
+    margin-top: 0;
+    padding-bottom: 20px;
+    align-items: start;
+}
+.nav-items{
+
+}
+
+.nav-items ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+    padding-top: 30px;
+}
+
+.nav-items ul li {
+    cursor: pointer;
+}
+
+.nav-login{
+    padding-top: 30px;
+    display: block;
+}
+
+.nav-login a {
+    text-decoration: none;
+    margin-right: 20px;
+    color: white;
+}
+
+.nav-login button {
+
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #b8860b;
+    color: inherit;
+    transition: background-color 0.3s ease;
+}
+
+.nav-login button:hover {
+    background-color: antiquewhite;
+}
+
+.carousel {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.carousel h1 {
+    font-family: "Cinzel", serif;
+    font-size: 2.5rem;
+    margin: 0 0 10px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+  .carousel h1::before,
+  .carousel h1::after {
+    content: "";
+    height: 1px;
+    width: 60px;
+    background-color: #000; /* Line color */
+    margin: 20px 10px; /* Spacing between the text and the lines */
+  }
+  
+.carousel p {
+    font-size: 1rem;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.carousel-item {
+    flex: 1;
+    max-width: 120px;
+    text-align: center;
+}
+
+.carousel-item img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.carousel-item.active {
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.carousel-controls {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100px;
+    margin: 0 auto;
+}
+
+.carousel-controls button {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-controls button:hover {
+    background-color: #eee;
+}
+
+.carousel-item p {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.landing img {
+    width: 100%;
+    height: auto;
+}
+
+.content {
+    background-color: #f9f9f9;
+    text-align: center;
+    height: 100vh;
+}
+.cards-container {
+    margin-top: 0;
+    padding: 10px;
+    margin-left: 110px;
+    margin-right: 110px;
+    padding-left: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2px;
+    grid-row-gap: 40px;
+    max-width: 1200px;
+}
+
+.hotel-card {
+    padding: 0px;
+    width: 100%;
+    max-width: 450px;
+    display: grid;
+    grid-template-columns: 0.02fr 1fr;
+    grid-template-rows: repeat(2, 1fr) 0.3fr 1fr;
+}
+
+.div1 {
+    grid-area: 1 / 1 / 4 / 3;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.div2 {
+    grid-area: 3 / 2 / 5 / 3;
+    background-color: #f9f9f9;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.hotel-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hotel-title {
+    font-family: "Cinzel", serif;
+    color: #1a365d;
+    margin: 0;
+    font-size: 20px;
+}
+
+.hotel-description {
+    
+    font-weight: lighter;
+    color: #4a5568;
+    font-size: 13px;
+    word-spacing: 5px;
+}
+
+.book-now-btn {
+    background-color: #b8860b;
+    color: white;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.book-now-btn:hover {
+    background-color: #a67a00;
+}
+
+.more-link {
+    color: #b8860b;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.more-link:hover {
+    text-decoration: underline;
+}
+
+.btnmore {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+    .cards-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+.container-search {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 400px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    width: 500px;
+    justify-content: space-between;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    width: 70%;
+}
+
+.icon {
+    margin-right: 10px;
+    color: #666;
+    font-size: 18px;
+}
+
+.search-input {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    width: 100%;
+    color: #333;
+    padding: 5px;
+    background: transparent;
+}
+
+.dropdown-container {
+    display: flex;
+    align-items: center;
+    width: 25%;
+    position: relative;
+}
+
+.dropdown {
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: transparent;
+    color: #333;
+    appearance: none;
+    cursor: pointer;
+}
+
+/* Add a caret icon */
+.dropdown-container::after {
+    content: "▼";
+    position: absolute;
+    right: 10px;
+    color: #666;
+}
+
+.dropdown-container select {
+    border-bottom: 1px solid #ccc;
+}
+
+
+
+.exclusive-offers{
+    background-color: #f0f0f0;
+}
+
+
+
+
+.footer-main {
+    padding-left: 150px;
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #000;
+    color: #ccc;
+}
+
+.destinations-brands {
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 20px;
+    background-color: #000;
+}
+
+.footer-section {
+    flex: 1;
+    min-width:300px;
+}
+
+.brands h1 {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.subscribe p {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #aaa;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.email-input {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background: none;
+    color: #ccc;
+    padding: 5px;
+    width: 200px;
+    outline: none;
+}
+
+.subscribe-btn {
+    background-color: #ccc;
+    color: #000;
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.contacts p {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.links p {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #aaa;
+}
+
+.links-columns {
+    display: flex;
+    gap: 20px;
+}
+
+.links-columns ul {
+    list-style: none;
+    padding: 30px;
+}
+
+.links-columns ul li {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.social p {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #aaa;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons span {
+    font-size: 20px;
+    color: #ccc;
+    cursor: pointer;
+}
+.destinations-brands h3{
+    color: #aaa;
+}
+
+.destinations-brands p {
+    font-size: 10px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #aaa;
+}
+
+.destinations-brands hr {
+    border: none;
+    border-top: 1px solid #999;
+}
+
+.brands {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+.footer-bottom {
+    padding-bottom: 30px;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 5px;
+    color: #666;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-links { 
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.footer-links a {
+    color: #999;
+    text-decoration: none;
+    font-size: 8px;
+
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+
+.booking{
+    display: flex;
+    justify-content: space-between;
+}
+
+.customer{
+    display: flex;
+    justify-content: space-between;
+}
